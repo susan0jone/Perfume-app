@@ -1,0 +1,623 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+  scroll-behavior: smooth;
+}
+
+.body-content{
+  width: 100%;
+  background: white;
+}
+header img{
+  height: 6%;
+  position: fixed;
+}
+.hero{
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), #00000099),url("pics/perfume.jpg");
+  background-size: cover;
+  height: 75%;
+
+}
+.hero-nav{
+  position: fixed;
+  background: transparent;
+  right: 0;
+  left:0;
+  transition: all 0.5s ease-in-out;
+  padding: 2px;
+}
+.perfume-image {
+  display: none;
+}
+.header{
+  font-family: 'Lobster', cursive;
+  font-size: 70px;
+  color:  #E9E3C3;;;
+  text-align: center;
+  padding: 30px;
+  padding-top: 80px;
+
+}
+.header-title{
+  text-align: center;
+}
+nav{
+  text-align: right;
+  transition: all 0.3s ease-in;
+}
+nav ul li{
+  display: inline-block;
+  margin-right: 15px;;
+  text-decoration: none;
+  color: #cf418d;
+  cursor: pointer;
+  padding: 10px;
+  padding-left: 20px;
+}
+
+button.order-link{
+  color: white;
+}
+nav ul li:hover{
+  text-decoration: underline;
+}
+.order-link:hover{
+  text-decoration: underline;
+}
+.header-content{
+  padding: 20px;
+  font-size: 14px;
+  text-align: center;
+  color: #ce5897;;
+  line-height: 20px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
+}
+.section{
+  padding: 50px;
+  margin-top: 150px;
+  margin-bottom: 150px;;
+  font-size: 20px;
+  color:  #43142d;
+  text-align: center;
+}
+.article{
+  padding: 50px;
+  text-align: center;
+  background-color: #43142d;
+}
+.features{
+  margin-bottom: 100px;
+}
+ .title{
+  font-size: 40px;
+  color: #43142d;
+  font-weight: bolder;
+  padding: 10px;
+  text-align: center;
+
+}
+.features div{
+  line-height: 30px;
+}
+button{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 20px 45px;
+  font-size: 20px;
+  border-radius: 5px;;
+  background-color:  rgba(207, 65, 141, 0.4);;;;;
+  color: white;
+  font-weight: bold;
+  transition: all 0.3s ease-in;
+}
+.second-article{
+  text-align: center;
+ margin-top: 100px;
+  margin-bottom: 750px;
+  padding-bottom: 100px;
+}
+.second-article button{
+  padding: 30px 55px;
+  font-size: 18px;
+  color: white;
+  background-color: rgb(27, 27, 27);
+}
+button:hover{
+  background-color: #cf418d;
+  color: white;
+}
+footer{
+  background: linear-gradient(0deg,#43142d , rgba(67, 20, 45) 100% );
+  font-size: 15px;
+  padding: 10px;
+  color: white;
+  position: fixed;
+  left:0;
+  right:0;
+  bottom: 0px;
+  top: 70px;
+  z-index: -5;
+  text-align: left;
+}
+footer div{
+  margin-top: 20px;
+}
+.order-box{
+  display: none;
+  background: white;
+  position: fixed;
+  top: 0;
+  left: 2%;
+  right: 2%;;
+  z-index: 734868230723409;
+  height: 450px;
+  padding: 10px;
+  margin-top: 50px;
+  text-align: center;
+  border-radius: 10px;;
+  border: solid 2px #cf418d; ;
+  overflow-x: auto;
+}
+.order-content{
+  clear: both;
+  justify-content: space-around;
+  /* height: 500px; */
+}
+.order-container hr{
+  background-color: #43142d;;
+}
+#item img{
+  height: 120px;
+  width: 100%;
+}
+#item {
+  padding: 20px;;
+  margin: 20px;
+}
+.increment, .decrement, .second-increment, .second-decrement, .third-increment , .third-decrement{
+  background-color:  #43142d;;
+  display: inline-block;
+  padding: 5px 10px;;
+  margin: 10px;
+  color: white;
+  cursor: pointer;
+  
+}
+#item-details{
+  /* padding: 50px; */
+  margin: 20px;
+  font-size: 18px;
+  line-height: 20px;
+}
+.checkout button{
+  display: none;
+}
+.checkout{
+  padding-bottom: 30px;
+}
+
+.location{
+  padding: 20px;
+
+
+}
+.icon{
+  position: fixed;
+  right: 100px;
+  top:10px;
+  background: rgba(255, 255, 255, 0.8);
+  color: black;
+  padding: 7px 10px;;
+  border-radius: 50%;
+}
+.arrow{
+  position: fixed;
+  left: 100px;
+  top:10px;
+  background: rgba(255, 255, 255, 0.8);
+  color: black;
+  padding: 7px 10px;;
+  border-radius: 50%;
+
+}
+.location input{
+  padding: 20px;;
+  margin-bottom: 30px;;
+  font-size: 14px;
+  width: 90%;
+}
+.location label{
+  font-size: 16px;
+}
+form{
+  line-height: 35px;;
+}
+.location textarea{
+  padding: 10px;
+  width: 75%;
+  height: 100px;
+}
+.notification{
+  background:  #43142d;;
+  padding: 15px;
+  font-size: 17px;
+  color: white;
+  display: none;
+
+}
+#contact-form{
+  line-height: 30px;;
+}
+#contact-form textarea{
+  padding: 20px;
+  font-size: 15px;
+}
+#submit{
+  margin-top: 10px;
+  border: solid 1px #43142d;;
+  background-color: rgb(27, 27, 27);
+  color: white;
+  font-weight: bold;
+  transition: all 0.3s ease-in;
+  padding: 12px 20px;
+  border-radius: 20px;
+}
+.features{
+  padding: 15px;
+  margin-top: 10px;
+  font-size: 17px;
+  line-height: 25px;
+}
+.features div{
+  margin-top: 40px;
+  color: #43142d;;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.fa-gem,.fa-leaf{
+  color:  #cf418d; ;
+}
+.second-article span{
+  display: block;
+  font-size: 40px;
+  font-weight: bolder;
+  color: #43142d;;
+  padding-bottom: 20px;
+
+}
+.second-article div{
+  padding: 20px;
+  padding-top: 30px;
+  font-size: 17px;
+}
+.contact{
+  line-height: 22px;
+}
+.social{
+  position: fixed;
+  right: 5%;
+  background-color:  #43142d;;;
+  line-height: 60px;
+  bottom: 150px;
+}
+
+@media screen and (min-width: 1024px) {
+  .hero{
+    background: #43142d;
+    height: fit-content;
+    display: flex;
+  }
+  .perfume-image {
+    display: block;
+    background-image: url("pics/perfume.jpg");
+    background-size: contain;
+    height: 550px;
+    padding-top: 100px;
+    width: 1000px;
+  }
+  .header{
+    height: fit-content;
+    width: 100%;
+    font-family: 'Lobster', cursive;
+    font-size: 70px;
+    color: #E9E3C3;
+    text-align: left;
+    padding: 0px;
+    max-width: 100%;
+  }
+  .hero-nav{
+    position: fixed;
+    background: transparent;
+    right: 0;
+    left:0;
+    transition: all 0.5s ease-in-out;
+    padding: 10px;
+    padding-bottom: 20px;
+  }
+
+  nav{
+    text-align: right;
+    transition: all 0.3s ease-in;
+  }
+  nav ul li{
+    display: inline-block;
+    margin-right: 150px;
+  }
+  nav ul li a{
+    text-decoration: none;
+    color: #cf418d;
+  }
+  nav ul li a:hover{
+    text-decoration: underline;
+  }
+  .header-content{
+    padding-top: 40px;
+    font-size: 17px;
+    color:#cf418d;
+    text-align: left;
+    width: 100%;
+    font-weight: normal;
+    line-height: 25px;;
+    margin-left: -20px;
+  }
+  .header-title{
+    padding: 50px;
+    padding-top: 80px;
+    text-align: left;
+
+  }
+  header img{
+    height: 60px;
+    position: fixed;
+  }
+  .hero-content{
+    display: flex;
+  }
+  .perfume-image img{
+    height: 500px;
+    width: 600px;
+  }
+  .section{
+    margin: 100px;
+    margin-bottom: 10px;
+    padding: 180px;
+    font-size: 37px;
+    color:  #43142d;
+  }
+  
+  button{
+    margin: 30px;
+    padding: 17px 50px;
+    font-size: 17px;
+    border-radius: 5px;;
+    border: solid 1px #43142d;;
+    background-color: rgb(27, 27, 27);
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s ease-in;
+  }
+
+  .second-article{
+    text-align: center;
+    padding: 150px;
+    padding-top: 50px;
+   margin-top: 80px;
+   margin-bottom: 700px;
+   padding-bottom: 200px;
+   margin-left: 0px;
+  }
+  .second-article button{
+    padding: 50px 120px;
+    font-size: 50px;
+    color: white;
+    background: #43142d;;;
+    
+  }
+  button:hover{
+    background-color: #cf418d;
+    color: white;
+  }
+  footer{
+    background: linear-gradient(0deg,#43142d , rgba(67, 20, 45) 100% );
+    font-size: 17px;
+    display: flex;
+    padding: 50px;
+    color: white;
+    justify-content: space-around;
+    position: fixed;
+    left:0;
+    right:0;
+    bottom: 0px;
+    top: 150px;
+    z-index: -5;
+  }
+  footer div{
+    margin: 0px;
+  }
+  .order-box{
+    display: none;
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 200px;
+    right: 200px;;
+    z-index: 734868230723409;
+    height: 500px;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 10px;;
+    border: solid 2px #cf418d; ;
+    overflow-x: hidden;
+  }
+  .order-content{
+    clear: both;
+ 
+    display: flex;
+    justify-content: space-around;
+    /* height: 500px; */
+  }
+  .order-container hr{
+    background-color: #43142d;;
+  }
+  #item img{
+    height: 250px;
+    width: 300px;
+  }
+  #item {
+    padding: 20px;;
+    margin: 20px;
+  }
+  .increment, .decrement, .second-increment, .second-decrement, .third-increment , .third-decrement{
+    background-color:  #43142d;;
+    display: inline-block;
+    padding: 0px 10px;;
+    margin: 10px;
+    color: white;
+    cursor: pointer;
+    
+  }
+  #item-details{
+    padding: 50px;
+    margin: 20px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .checkout button{
+    display: inline-block;
+  }
+  .checkout{
+    padding-bottom: 0px;
+  }
+  
+  .location{
+    position: absolute;
+    right: -1100px;;
+    top: 10px;
+    width: 750px;
+    padding: 50px;
+  
+  }
+  .icon{
+    position: fixed;
+    right: 150px;
+    top:0;
+    background: rgba(255, 255, 255, 0.8);
+    color: black;
+    padding: 7px 10px;;
+    border-radius: 50%;
+  }
+  .arrow{
+    position: fixed;
+    left: 150px;
+    top:0;
+    background: rgba(255, 255, 255, 0.8);
+    color: black;
+    padding: 7px 10px;;
+    border-radius: 50%;
+
+  }
+  .location input{
+    padding: 20px;;
+    margin-bottom: 30px;;
+    font-size: 16px;
+    width: fit-content;
+  }
+  .location label{
+    font-size: 20px;
+  }
+  form{
+    line-height: 35px;;
+  }
+  .location textarea{
+    padding: 10px;
+    width: 350px;
+    height: 200px;
+  }
+  .notification{
+    background:  #43142d;;
+    padding: 15px;
+    font-size: 17px;
+    color: white;
+    display: none;
+  
+  }
+  #contact-form{
+    line-height: 30px;;
+  }
+  #contact-form textarea{
+    padding: 20px;
+    font-size: 15px;
+  }
+  #submit{
+    margin-top: 10px;
+    border: solid 1px #43142d;;
+    background-color: rgb(27, 27, 27);
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s ease-in;
+    padding: 12px 20px;
+    border-radius: 20px;
+
+  }
+  .features{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px;
+    padding-bottom: 50px;
+    margin-top: 0px;
+    font-size: 30px;
+    line-height: 45px;
+    margin-bottom: 10px;
+  }
+ 
+   .title{
+    font-size: 60px;
+    color: #43142d;
+    font-weight: bolder;
+    padding: 10px;
+    text-align: center;
+
+  }
+  .features div{
+    margin-top: 30px;
+    padding: 50px;;
+    color: #43142d;;
+    max-width: 500px;
+    line-height: 50px;;
+  }
+  .fa-gem,.fa-leaf{
+    color:  #cf418d; ;
+  }
+  .second-article span{
+    display: block;
+    margin-top: -100px;
+    font-size: 60px;
+    font-weight: bolder;
+    color: #43142d;;
+    padding-bottom: 10px;
+   
+ 
+  }
+  .second-article div{
+    padding: 35px;
+    font-size: 22px;
+    color: #43142d;;
+  }
+  .contact{
+    line-height: 40px;
+  }
+  .social{
+    position: fixed;
+    right: 50px;
+    background-color:  #43142d;;;
+    line-height: 60px;
+    bottom: 150px;
+  }
+  }
