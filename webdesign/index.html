@@ -32,12 +32,13 @@
                 <div class="header">
                   Looking for a scent that suits you? Look no further.
                 </div>
+                <button class="order-link">Explore Our Products</button>
                 <div class="header-content">
                   Here at Selia Perfumes, we believe that everyone deserves
                   to smell and feel good. There is a right fragrance for everyone
                   and we are committed to finding the fragrance for you.
                 </div>
-                <button class="order-link">Order Now</button>
+              
               </div>
             </div>
             <div class="perfume-image"></div>
@@ -81,7 +82,7 @@
             at no extra cost.<br/>
            </div>
            </div>
-            <button class="order-link">Order Now</button>
+            <button class="order-link">Explore Our Products</button>
         </div>
         <footer id="contact">
             <div>
@@ -216,13 +217,14 @@
         let secondmaximumTotal = 0;
         let thirdmaximumTotal = 0;
         $(".total").html(total);
-        $(".second-total").html(total);
-        $(".third-total").html(total);
+        $(".second-total").html(secondTotal);
+        $(".third-total").html(thirdTotal);
         $(".amount").html(count);
         $(".second-amount").html(secondCount);
         $(".third-amount").html(thirdCount);
         $(".maximum-total").html(maximumTotal);
-          $(window).scroll(function() {
+          
+         $(window).scroll(function() {
            if($(window).scrollTop() > 500) {
              $(".hero-nav").css( "background-color", "white" );
              $(".hero-nav").css('box-shadow', '5px 5px 5px #ccc');
@@ -253,10 +255,14 @@
         })
         $(".icon").click(function(){
           $(".order-box").hide();
+          $("#home").removeClass("blur");
           location.reload(true);
         })
         $(".order-link").click(function (){
+          $("#home").addClass("blur");
           $(".order-box").show();
+       
+
         })
         $(".checkout").click(function(){
           $(".order-box").animate({scrollLeft:$('.location').offset().left});
