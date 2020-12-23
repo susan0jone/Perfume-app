@@ -5,6 +5,14 @@
 html, body{
   scroll-behavior: smooth;
 }
+.blur{
+   z-index: 351873689164389;
+   position: fixed;
+  filter: blur(10px);
+
+}
+
+
 
 .body-content{
   width: 100%;
@@ -15,7 +23,7 @@ header img{
   position: fixed;
 }
 .hero{
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), #00000099),url("pics/perfume.jpg");
+  background: linear-gradient(0deg, #00000080, #00000099),url("pics/perfume.jpg");
   background-size: cover;
   height: 75%;
 
@@ -317,7 +325,7 @@ form{
     display: block;
     background-image: url("pics/perfume.jpg");
     background-size: contain;
-    height: 550px;
+    height: 600px;
     padding-top: 100px;
     width: 1000px;
   }
@@ -325,10 +333,11 @@ form{
     height: fit-content;
     width: 100%;
     font-family: 'Lobster', cursive;
-    font-size: 70px;
+    font-size: 75px;
     color: #E9E3C3;
     text-align: left;
     padding: 0px;
+    padding-bottom: 30px;;
     max-width: 100%;
   }
   .hero-nav{
@@ -339,6 +348,7 @@ form{
     transition: all 0.5s ease-in-out;
     padding: 10px;
     padding-bottom: 20px;
+
   }
 
   nav{
@@ -349,21 +359,21 @@ form{
     display: inline-block;
     margin-right: 150px;
   }
-  nav ul li a{
+  nav ul li {
     text-decoration: none;
-    color: #cf418d;
+    color:  #ce5897;
   }
   nav ul li a:hover{
     text-decoration: underline;
   }
   .header-content{
-    padding-top: 40px;
-    font-size: 17px;
-    color:#cf418d;
+    font-size: 16px;
+    color:#ce5897;
     text-align: left;
-    width: 100%;
+    width: 90%;
     font-weight: normal;
     line-height: 25px;;
+    margin: 0;
     margin-left: -20px;
   }
   .header-title{
@@ -390,11 +400,12 @@ form{
     font-size: 37px;
     color:  #43142d;
   }
-  
+ 
+ 
   button{
     margin: 30px;
-    padding: 17px 50px;
-    font-size: 17px;
+    padding: 20px 45px;
+    font-size: 18px;
     border-radius: 5px;;
     border: solid 1px #43142d;;
     background-color: rgb(27, 27, 27);
@@ -402,6 +413,12 @@ form{
     font-weight: bold;
     transition: all 0.3s ease-in;
   }
+  .header-title button{
+    margin: 0px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+ 
 
   .second-article{
     text-align: center;
