@@ -72,16 +72,6 @@
 
         </div>
         <div class="second-article">
-           <div align="center">
-             <span>
-               But that's not all! 
-           </span>
-           <div class="note-details">
-            We are also offering a 30% discount price
-            for your first order and will be delivering to your doorstep
-            at no extra cost.<br/>
-           </div>
-           </div>
             <button class="order-link">Explore Our Products</button>
         </div>
         <footer id="contact">
@@ -225,10 +215,17 @@
         $(".maximum-total").html(maximumTotal);
           
          $(window).scroll(function() {
-           if($(window).scrollTop() > 500) {
+           if($(window).scrollTop() > 600 && $(window).scrollTop() < 800) {
              $(".hero-nav").css( "background-color", "white" );
              $(".hero-nav").css('box-shadow', '5px 5px 5px #ccc');
-            } else {
+             $(".section,.title").animate({opacity: '1'}, 2000);
+  
+            } 
+            else if ($(window).scrollTop() > 850) {
+              $(".features").animate({opacity: '1'}, 2000).delay(5000);
+
+            }
+            else if($(window).scrollTop() < 500){
                    $(".hero-nav").css( "background-color", "transparent" );
                    $(".hero-nav").css('box-shadow', '0px 0px 0px transparent');
                 }
